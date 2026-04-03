@@ -1,0 +1,90 @@
+
+.full{
+  background-image: linear-gradient(to right,rgb(209, 164, 164),rgb(206, 181, 158));
+  box-shadow: 30px 40px 100px blueviolet
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-image: linear-gradient(to right,rgb(19, 17, 98),rgb(19, 195, 101));
+  color: aliceblue;
+}
+nav ul li{
+  list-style-type: none;
+  display: flex;
+  
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+ 
+}
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+label{
+  display: block;
+}
+form{
+  text-align: center;
+}
+h1,h2{
+  text-align: center;
+}
+.full{
+
+    width: 400px;
+    /* fixed width */
+    margin: 0 auto;
+    /* center horizontally */
+    background-color: rgb(235, 248, 246);
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  input[type]{
+    width: 20vw;
+    height: 40px;
+  }
+  textarea{
+    height: 80px;
+    width: 20vw;
+  }
+  button{
+    height: 30px;
+    width: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+  }
+.card{
+  width: 250px;
+  background-color:rgb(242, 233, 236);
+  height: 200px;
+  border: 2px solid;
+  box-shadow: 10px 10px 10px rgb(158, 171, 222);
+  opacity:0.9;
+  border-radius: 20px;
+}
+.card .title{
+  text-align: center;
+  font-size: 25px;
+  color: red;
+}
+.card .desc{
+  color: green;
+  font-size: 18px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
