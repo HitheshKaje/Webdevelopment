@@ -1,0 +1,15 @@
+{
+  "name": "padf-merge",
+  "version": "1.0.0",
+  "description": "this is a pdf merger",
+  "license": "ISC",
+  "author": "Hithesh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

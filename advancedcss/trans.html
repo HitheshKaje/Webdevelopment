@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .conatiner{
+            background-color: rgb(15, 210, 145);
+            width: 450px;
+            height: 70vh;
+        }
+        .box{
+            width:80px;
+            height: 90px;
+            background-color: rgb(68, 0, 255);
+            margin: 5px;
+            /* transform: rotate x(45deg)scalex(0.5); */
+            /* transform: skew(45deg,10deg); */
+            transform: rotateY(2deg);
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box">box</div>
+    </div>
+    
+</body> 
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleements</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            
+        }
+         .one{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid;
+            font-size: 30px;    
+            align-items: center;
+            border-radius: 20px;
+            width:30vw;
+            word-wrap: initial;
+            flex-wrap: wrap-reverse;
+        }
+        form input{
+            height: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    
+   <form class="one" action=""onsubmit="calculate()">
+   price: <input type="number" name="price"id="one">
+   items:<input type="number"name="price"id="two">
+   <input type="submit">
+   </form>
+    <script>
+
+        function calculate() {
+           let m= document.getElementById("one").value;
+           let n= document.getElementById("two").value;
+           if (n<=0){
+            alert("select a good product with good number");
+           }
+           if(n>=1){
+            let o=m*n;
+           alert("The price is"+o);
+           
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>

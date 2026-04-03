@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(232, 236, 236);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgb(205, 72, 72), rgb(24, 35, 89));
+    color: aliceblue;
+    padding: 10px 0;
+    align-items: center;
+    padding-right: 25px;
+    
+    
+
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Betania Patmos", cursive;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.logo img {
+    width: 40px;
+    /* adjust size */
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    object-fit: cover;
+
+}
+
+nav ul li {
+list-style-type: none;
+    
+}
+nav  ul  li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgb(14, 45, 222), rgb(216, 216, 187));
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 76px;
+    align-items: center;
+}
+
+.hero-left .one {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.hero-left .two {
+    font-size: 30px;
+}
+
+.hero-right img {
+    border-radius: 20px;
+
+}
+
+.btn {
+    background-image: linear-gradient(to right, rgb(40, 15, 230), rgb(13, 33, 187));
+    color: wheat;
+    padding: 7px 9px;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.btn:hover {
+    background-image: none;
+    background-color: rgb(229, 3, 44);
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    background-color: transparent;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font: 1em sans-serif;
+    background-image: linear-gradient(to right, rgb(44, 44, 115), rgb(206, 151, 22));
+
+}
+
+@media screen and (max-width: 842px) {
+        
+    body {
+            background: linear-gradient(to right, blue, purple);
+        }
+    
+    nav{
+        flex-direction: column;
+            align-items: center;
+            gap: 3;
+    }
+}

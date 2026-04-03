@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div class="container">i am a container
+        <form action="">
+            Name <input id="name" type="text">
+            <input id="submit" type="submit">
+        </form>
+    
+    </div>
+    <script>
+        
+        // const jsonString = '{"name":"Harry","age":25}';
+        // console.log(jsonString)
+        // const jsObj=JSON.parse(jsonString)
+        // console.log(jsObj)
+        const user = {
+                "name": "Harry",
+                "age": 25,
+                "skills": ["JavaScript", "Python"]
+        };
+        const json=JSON.stringify(user);
+        console.log(json);
+        const obj=JSON.parse(json);
+        console.log(obj)
+    </script>
+
+    
+</body>
+</html>

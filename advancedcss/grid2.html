@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .conatiner {
+            border: 2px solid red;
+            background-color: violet;
+            display: grid;
+            grid-area: "nav nav nav="
+            "side article article";
+        }
+
+        .item {
+            height: 40px;
+            border: 2px solid;
+            margin: 20px;
+        }
+        .item-1{
+            grid-area: nav;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="conatiner">
+            <div class="item item-1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item item-4">4</div>
+            <div class="item">5</div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

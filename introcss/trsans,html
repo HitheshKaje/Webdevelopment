@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+
+  /* transition */
+  transition: all 0.5s ease;
+}
+
+.box:hover {
+  background-color: red;
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

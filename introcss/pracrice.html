@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            height: 100vh;
+            width: 100vw;
+            /* full screen width */
+            background-color: rgba(250, 250, 250, 0.293);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            /* logo left, menu right */
+            align-items: center;
+            /* vertical center */
+            background-color: blue;
+            height: 100px;
+            padding: 0 20px;
+        }
+
+        /* LOGO */
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* MENU */
+        .menu {
+            color: white;
+            font-size: 18px;
+        }
+
+        .menu span {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <div class="navbar">
+            <div class="logo">Mahaganapti Holidays</div>
+
+            <div class="menu">
+                <span>Home</span>
+                <span>About</span>
+                <span>Contact</span>
+                <span>Logout</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

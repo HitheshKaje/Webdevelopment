@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <form id="form" action="">
+        name:<input type="text">
+        tel:<input type="tel">
+        <input type="submit" value="sumbmit">     
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit",(e)=>{
+            e.preventDefault()
+            console.log("submitted",e.target[1].value)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Box</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <meta name="content"content="The designing of the box model">
+        <style>
+            body{
+                position: static;
+                align-content: center;
+                text-align: center;
+
+            }
+            #div{
+                width: 200px;
+                height:100px
+
+            }
+            .two{
+                background-color: rgba(34, 255, 0, 0.286);
+                width:600px;
+                height:100px;
+                padding: 10px;
+                border: solid green;
+                right: 40px;
+                top:100px
+                position: absolute;
+                z-index:2;
+                 box-sizing: border-box;
+            }
+            .one{
+                background-color: rgb(0, 255, 238);
+                width:600px;
+                height:100px;
+                top:60px;
+                padding: 10px;
+                position: absolute;
+                z-index:2;
+                right: 30px;
+                left: 30px;
+                border:solid black;
+                box-sizing: border-box;
+            }
+             .on{
+                background-color: rgb(0, 255, 238);
+                width:600px;
+                height:100px;
+                padding: 10px;
+                position: absolute;
+                z-index:2;
+                right: 0px;
+                top:10px;
+                left:50px;
+                border:solid black;
+                box-sizing: border-box;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            This is box model
+        </h1>
+        <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repellat cupiditate aliquam doloribus ipsum accusamus repellendus odio, perspiciatis totam doloremque saepe. Sed voluptate quod aliquid iste fuga, aspernatur distinctio omnis?</p>
+        <div class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium est sint quas omnis fugiat obcaecati ipsam expedita nam, dicta cumque.</div>
+        <p class="on">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis qui aliquid suscipit eaque quasi est unde velit, necessitatibus sunt assumenda eveniet quia. Quae quasi assumenda dolorem ea, architecto provident sed?</p>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        .container{
+            width:50vw;
+            height: 100vh;
+            background-color: wheat;
+            border: 2px solid;
+        }
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: tomato;
+            animation-name: hithesh;
+            animation-duration: 1s;
+            animation-iteration-count:infinite ;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-delay: 2s;
+            animation-directio  ``n: reverse;
+        }
+        @keyframes hithesh{
+            from {
+                background-color: violet;
+            
+            }
+            to{
+                transform: translatex(100px);
+                background-color: blanchedalmond;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+    </div>
+    
+</body>
+</html>

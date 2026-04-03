@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meṭa name="description" content="The description about the flexbox">
+        <title>Document</title>
+        <style> 
+            .container{
+                
+                border: solid rgb(64, 47, 255);
+                /* padding: 5px; */
+                height: 40vh;
+                display: flex;
+                /* flex-direction: row; */
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap-reverse;
+                gap: 20px ;
+            }
+                #d{
+                    align-self: flex-start;
+                }
+
+
+            
+            .box1{
+                height: 50px;
+                width: 50px;
+                border: solid red;
+                padding: 2px;
+                margin: 20px;
+            }
+             .box2{
+                height: 50px;
+                width: 50px;
+                border: solid red;
+                padding: 2px;
+                margin: 20px;
+            }
+        </style>
+</head>
+
+<body>
+    <h1>Flex Box</h1>
+    <div class="container">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box2">Box5</div>
+        <div class="box2">Box4</div>
+        <div class="box2">Box3</div>
+        
+    </div>
+
+</body>
+
+</html>

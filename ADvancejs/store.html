@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local</title>
+</head>
+
+<body>
+    <div class="container">i am a container
+        <form action="">
+            Name <input id="name" type="text">
+            <input id="submit" type="submit">
+        </form>
+
+    </div>
+    <script>
+        const v = localStorage.getItem("name")
+        if (v) {
+            document.getElementById("name").value = v
+        }
+        document.getElementsByTagName("form")[0].addEventListener("submit", (e) => {
+            e.preventDefault()
+            const value = document.getElementById("name").value;
+            localStorage.setItem("name", value)
+        }) 
+    </script>
+</body>
+
+</html>

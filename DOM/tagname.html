@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleements</title>
+    <style>
+        .black{
+            background-color: bisque;
+            color: violet;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <button onclick="something()"> something</button>
+    </div>
+    <script>
+        function something(){
+            let divs=document.getElementsByTagName("div");
+            for(element of divs){
+                element.classList.add("black");
+            }
+        }
+
+      
+    </script>
+
+</body>
+
+</html>
