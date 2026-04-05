@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(159, 18, 215), rgb(195, 195, 217));
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+    display: flex;
+    padding: 28px;
+    gap: 54px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(237, 0, 0);
+
+
+}
+
+nav div {
+    margin-left: 30px;
+    color: white;
+}
+footer {
+    background: linear-gradient(to right, #2aa7a9, #5bc0be);
+    padding: 40px;
+    text-align: center;
+}

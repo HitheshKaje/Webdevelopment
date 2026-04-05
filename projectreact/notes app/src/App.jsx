@@ -7,7 +7,7 @@ function App() {
   const [currentNote, setcurrentNote] = useState({ title: "", desc: "" })
   useEffect(() => {
     console.log(" i am useiffect")
-    let localnotes = localStorage.getItem("notes")
+    let localnotes = localStorage.getItem("localnotes")
     if (localnotes) {
       setnotes(JSON.parse(localnotes))
     }
@@ -20,7 +20,7 @@ function App() {
     
   }
   const deleteNote=(title)=>{
-    setNotes(notes.filter(item=>item.title!=title))
+    setnotes(notes.filter(item=>item.title!=title))
     localStorage.setItem("notes", JSON.stringify(notes.filter(item => item.title != title)))
 
   }
