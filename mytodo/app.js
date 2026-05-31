@@ -3,7 +3,7 @@ const inputTag = document.getElementById("todoInput")
 const todoListUl = document.getElementById("todoList")
 
 let todos = []
-const todosString = localStorage.getItem("todos")
+const todosString = localStorage.getItem("todos") 
 if (todosString) {
     todos = JSON.parse(todosString)
 }

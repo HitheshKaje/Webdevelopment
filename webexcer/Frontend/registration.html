@@ -4,25 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrationpage</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="logo">
-            <img src="logo.jpg" alt="logo" height="60px">
+            <img src="logo.jpg" alt="HK logo" height="60">
         </div>
-        <ul>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="logout.html">logout</a></li>
+            <li><a href="registration.html" class="active">Registration</a></li>
+            <li><a href="logout.html">Logout</a></li>
         </ul>
     </nav>
-    <footer>
-        2026 hk@all rights are reserved
 
+    <!-- Registration Form -->
+    <main class="form-section">
+        <form id="registration-form" action="submit()" method="post">
+            <h2>Registration Form</h2>
+
+            <label for="uname">Name:</label>
+            <input type="text" name="name" id="uname" required>
+
+            <label for="usn">USN:</label>
+            <input type="text" name="usn" id="usn" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </fieldset>
+
+            <label for="bg">Blood Group:</label>
+            <select name="bloodgroup" id="bg">
+                <option value="">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="nation">Nationality:</label>
+            <input type="text" name="nation" id="nation">
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" name="photo" id="photo">
+
+            <div class="form-actions">
+                <button type="submit" class="btn primary">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 HK. All rights reserved.</p>
     </footer>
 </body>
 

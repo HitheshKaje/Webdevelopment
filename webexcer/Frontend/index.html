@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>indexpage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>HK | Home</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Betania+Patmos&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logso">
-            <img src="logo.jpg" alt="logo" height="60px">
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="logout.html">logout</a></li>
-        </ul>
-    </nav>
-    <div class="container"></div>
-    <footer>
-        2026 hk@all rights are reserved
-    
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="HK home">
+                <img src="logo.jpg" alt="HK logo">
+                <span>HK</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="hero-content" aria-labelledby="page-title">
+            <p class="eyebrow">Welcome to HK</p>
+            <h1 id="page-title">A clean, simple, and stylish home page.</h1>
+            <p class="hero-text">
+                Build your page with a neat layout, clear navigation, and a polished
+                first impression for visitors.
+            </p>
+
+            <div class="hero-actions">
+                <a class="btn primary" href="registration.html">Get Started</a>
+                <a class="btn secondary" href="about.html">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 HK. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

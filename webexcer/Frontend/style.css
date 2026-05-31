@@ -1,40 +1,176 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(159, 18, 215), rgb(195, 195, 217));
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 30px;
+    background: linear-gradient(to right, rgb(159, 18, 215), rgb(195, 195, 217));
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-nav ul {
+.navbar .brand {
     display: flex;
-    padding: 28px;
-    gap: 54px;
-    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-nav ul li a{
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
     text-decoration: none;
     color: rgb(237, 0, 0);
-
-
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-nav div {
-    margin-left: 30px;
+.nav-links a:hover {
     color: white;
 }
-footer {
-    background: linear-gradient(to right, #2aa7a9, #5bc0be);
-    padding: 40px;
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
     text-align: center;
+    background: #f9f9f9;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background: rgb(159, 18, 215);
+    color: white;
+}
+
+.btn.secondary {
+    background: #eee;
+    color: #333;
+}
+
+/* Footer */
+.site-footer {
+    background: linear-gradient(to right, #2aa7a9, #5bc0be);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+}
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#registration-form {
+    background: bisque;
+    border: 3px solid red;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#registration-form label {
+    font-weight: bold;
+}
+
+#registration-form input,
+#registration-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 20px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn.primary {
+    background: rgb(159, 18, 215);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.primary:hover {
+    background: rgb(120, 0, 180);
+}
+legend{
+    font-weight: bold;
+    margin-bottom: 10px;
 }
