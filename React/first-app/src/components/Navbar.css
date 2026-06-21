@@ -1,0 +1,41 @@
+body{
+background-color: rgb(207, 220, 231);}
+div nav 
+{
+        background: linear-gradient(to right, rgb(141, 222, 149), rgb(96, 87, 71), rgb(92, 12, 153));
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+li {
+    color: rgb(158, 158, 63);
+}
+
+div nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+div nav ul li a:hover {
+    text-shadow: 8px 6px 9px rgb(208, 85, 14);
+    color: violet;
+}
+
+div p{
+    background:linear-gradient(to right,rgb(0, 0, 0),green,rgb(103, 103, 230));
+    color: rgb(109, 209, 220);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

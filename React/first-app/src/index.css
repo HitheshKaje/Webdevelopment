@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background: light-dark(white, black);
+  color: light-dark(black, white);
+}

@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cards{
+    border: solid rgb(197, 190, 190);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(198, 2, 35);
+    color: rgb(57, 145, 221);
+    width: 25vw;
+    height: 25vw;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 40px;
+    background-color: lightcyan;
+}
+
+.cards:hover{
+box-shadow: 3px 2px 3px 10px rgb(237, 238, 241),
+        2px 2px 2px 9px  rgb(185, 180, 201);    
+      animation: 8s;
+      transition-duration: 5000ms;
+    transform: scale(1.1) ;
+
+    transform-style: flat;
+    animation-name: move;
+    animation-duration: 200ms;
+    
+}
+.cards h1:hover{
+    text-shadow: 2px 2px 2px green;
+    transition-duration: 2000ms;
+    text-align: center;
+}
+
+.detail{
+    color: rgb(129, 26, 193);
+    text-align: center;
+}
