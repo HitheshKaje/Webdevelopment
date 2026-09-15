@@ -1,6 +1,6 @@
 import React from 'react'
 import './PlaceItem.css'
-import Card from '../../shared/components/UIElements/Card'
+import Card from '../../shared/componenets/Card/Card1';
 const PlaceItem = (props) => {
   return (
     <li className='place-item'>
@@ -13,13 +13,13 @@ const PlaceItem = (props) => {
         <p>{props.description}</p>
         <p>Created by: {props.creatorId}</p>
       </div>
-      <div className='place-item__action'>
+      <div className='place-item__actions'>
 
         <button>View On map</button>
         <button>Edit</button>
         <button>Delete</button>
       </div>
-      <Card />
+      </Card>
     </li>
   )
 };
