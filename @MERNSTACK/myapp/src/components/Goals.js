@@ -5,8 +5,6 @@ const Goals = (props) => {
   const { goals } = props;
   
   return (
-
-    <ul className=""</ul>
     <div className="goals-container">
       <h2>My Goals</h2>
       <ul>

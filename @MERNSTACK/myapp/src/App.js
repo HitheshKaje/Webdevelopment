@@ -1,14 +1,20 @@
+import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Goals from './components/Goals';
 import Life from './components/Life';
-
+import NewGolas from './NewGolas';
 function App() {
-  const course = [
+  const [course, setCourse] = useState([
     { id: 1, text: 'Learn React' },
     { id: 2, text: 'Build a React app' },
     { id: 3, text: 'Deploy the app' }
-  ];
+  ]);
+
+ const addGoal = newGoal => {
+    setCourse(prevGoals => [...prevGoals, { id: prevGoals.length + 1, text: newGoal }]);  
+  }
+
   return (
 
     
@@ -24,7 +30,9 @@ function App() {
         <h1>Welcome to React</h1>
         <p>all rights reserved</p>
       </div>
-    </div>
+    <NewGolas onAddGoal={addGoal} /> 
+    
+       </div>
   );
 }
 
